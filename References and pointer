@@ -1,0 +1,43 @@
+#include <iostream> 
+using namespace std;
+
+
+//References 
+void ibrahim() {
+    string food = "Rice";
+    string& meal = food;
+
+    cout << food << endl;
+
+    cout << meal;
+}
+// pointers
+void pointers() {
+    string snacks = "chips";
+    string* ptr = &snacks; // pointer variabl stores address of food (ptr)
+    //output the content of snacks (chips)
+    cout << snacks << endl;
+    // output the memory adrress of snacks 
+    cout << &snacks << endl;
+    //output the momory address of snacks with pointer
+    cout << ptr<< endl;
+    // Dereference : output the content snacks with the pointer
+    cout << *ptr << endl;
+    // change content of the pointer
+    *ptr = "Biscuit";
+    // output the new content of pointer
+    cout << *ptr << endl;
+    // Output the new content of snacks 
+    cout << snacks;
+
+
+}
+
+
+
+int main()
+{
+   /* ibrahim();*/
+    pointers();
+}
+
